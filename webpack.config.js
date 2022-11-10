@@ -19,7 +19,7 @@ module.exports = (env, argv) => {
   const copyPlugin = new CopyPlugin({
     patterns: [
       { from: "./src/images/favicon.svg", to: "./assets/favicon.svg" },
-      { from: "./src/images/favicon.ico", to: "./assets/favicon.ico" },
+      { from: "./src/images/favicon.png", to: "./assets/favicon.png" },
       { from: "./src/images/icon_192.png", to: "./assets/icon_192.png" },
       { from: "./src/images/icon_512.png", to: "./assets/icon_512.png" },
       { from: "./src/images/maskable_icon.png", to: "./assets/maskable_icon.png" },
@@ -35,7 +35,6 @@ module.exports = (env, argv) => {
     // and not allow any straggling "old" SWs to hang around
     clientsClaim: true,
     skipWaiting: true,
-    maximumFileSizeToCacheInBytes: 4200000, // special case to cache word list for offline play
   })
 
   const plugins = argv.mode === 'development' ? [htmlPlugin, copyPlugin] : [htmlPlugin, copyPlugin, serviceWorkerPlugin]
@@ -67,10 +66,6 @@ module.exports = (env, argv) => {
     filename: "bundle.[fullhash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true, // removes unused files from output dir
-  },
-  performance: {
-    maxEntrypointSize: 2700000, // special case to cache word list for offline play
-    maxAssetSize: 2700000 // special case to cache word list for offline play
   },
   devServer: {
     static: "./dist",
