@@ -40,18 +40,11 @@ button {
 }
 
 #controls {
-  display: grid;
-  grid-template-areas:
-    "nextGame newGame rules heart";
-  grid-template-columns:
-    1fr
-    auto
-    auto
-    auto;
+  display: flex;
+  justify-content: flex-end;
   grid-area: controls;
   width: 100%;
   height: 5vh;
-  white-space: pre;
 }
 
 #controls > button {
@@ -68,14 +61,6 @@ button {
   justify-content: center;
   margin-right: 1vmax;
   padding: 0;
-}
-
-#nextGame {
-  margin-left: 1vmax;
-  grid-area: nextGame;
-  font-size: calc(var(--default-font-size) * 0.75);
-  display: flex;
-  align-items: center;
 }
 
 #rules {
@@ -261,31 +246,14 @@ button {
   }
 
   #controls {
-    display: grid;
-    grid-template-areas:
-      "rules"
-      "heart"
-      "nextGame";
-    grid-template-rows:
-      auto
-      auto
-      1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
     width: 6vw;
   }
 
   #controls button {
-    width: auto;
-    margin-right: 0;
-    margin: 2vmax 0;
-  }
-
-  #nextGame {
-    margin-bottom: 1vmax;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    text-align: right;
-    justify-content: flex-end;
-    display: none;
+    margin: 1vmax 0;
   }
 }
