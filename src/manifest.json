@@ -1,7 +1,7 @@
 {
-  "name": "Palette",
-  "short_name": "Palette",
-  "description": "A spatial word game",
+  "name": "Pallet",
+  "short_name": "Pallet",
+  "description": "A spatial word game for people who misspell palette",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",

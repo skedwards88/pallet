@@ -1,5 +1,5 @@
 {
-  "name": "palette",
+  "name": "pallet",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skedwards88/palette.git"
+    "url": "git+https://github.com/skedwards88/pallet.git"
   },
   "keywords": [],
   "author": "",
@@ -45,7 +45,7 @@
     "workbox-webpack-plugin": "^6.5.2"
   },
   "bugs": {
-    "url": "https://github.com/skedwards88/palette/issues"
+    "url": "https://github.com/skedwards88/pallet/issues"
   },
-  "homepage": "https://github.com/skedwards88/palette#readme"
+  "homepage": "https://github.com/skedwards88/pallet#readme"
 }

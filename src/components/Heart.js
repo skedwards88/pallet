@@ -2,7 +2,7 @@ import React from "react";
 import packageJson from "../../package.json";
 
 export default function Heart({setDisplay}) {
-  const feedbackLink = `https://github.com/skedwards88/palette/issues/new?body=Palette+version+${packageJson.version}`
+  const feedbackLink = `https://github.com/skedwards88/Pallet/issues/new?body=Pallet+version+${packageJson.version}`
   
   return (
     <div className="App info">
