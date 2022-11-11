@@ -13,7 +13,7 @@ export default function Rules({setDisplay}) {
         </a>
         {`. Otherwise, enjoy this easier version.\n\n`}
         {<hr></hr>}
-        {`Build words that match the color patterns by swiping to connect adjacent letters.\n\nTap on a pattern to get a hint.\n\n`}
+        {`Swipe to connect letters into words that match the color patterns.\n\nTap on a pattern to get a hint.\n\n`}
         {<small>version {packageJson.version}</small>}
       </div>
       <button className="close" onClick={() => setDisplay("game")}>
